@@ -256,7 +256,7 @@ const SideBar = ({ user }) => {
     <section className={`sidebar ${open ? "w-64" : "w-12"}`}>
       <div className="sidebar__app-bar">
         <div className={`sidebar__app-logo ${!open && "scale-0 hidden"}`} onClick={() => setOpen(!open)}>
-          <span><img className='w-16 h-16' src={bot} alt="GPT" /></span>
+          <span><img className='w-26 h-16' src={bot} alt="GPT" /></span>
         </div>
         <div className={`sidebar__btn-close ${open && " hidden"}`} onClick={() => setOpen(!open)}>
           <MdMenu className='sidebar__btn-icon' />

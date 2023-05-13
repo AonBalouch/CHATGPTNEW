@@ -22,7 +22,7 @@ const ChatMessage = (props) => {
           selected === 'dalle' && ai ?
             <>
               <div className='message__createdAt text-left'>
-                (Requests to DALL·E are not stored as they are quickly removed from the server)
+                (Requests for images are not stored as they are quickly removed from the server)
               </div>
                 <Image url={text} />
             </>

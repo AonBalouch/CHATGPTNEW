@@ -152,7 +152,7 @@ const ChatView = () => {
       document.querySelector('.chatview__btn-send').setAttribute('disabled', true);
     }
 
-    if (fValueRef.current.startsWith('/dalle')) {
+    if (fValueRef.current.startsWith('/image')) {
       setAiModel('dalle')
     } else {
       setAiModel('davinci')
@@ -227,13 +227,13 @@ const ChatView = () => {
             onKeyUp={handleKeyUp}
           />
           <button type="submit" className='chatview__btn-send' disabled><MdSend /></button>
-          <div className='use__dalle'>To generate images with DALL·E use: <pre className='italic inline'>/dalle &#123;prompt&#125;</pre></div>
+          <div className='use__dalle'>To generate images with Lattice AGI Chat Image generator use: <pre className='italic inline'>/image &#123;prompt&#125;</pre></div>
         </div>
       </form>
       <div className="copyright">
-        LatticeGPT version May 12.
+      LatticeAGIChat version May 14.
         This is made
-        by <a target="_blank" rel="noreferrer" href="https://www.latticelabs.io/">Lattice</a> (GPT 3.5 turbo).
+        by <a target="_blank" rel="noreferrer" href="https://www.latticelabs.io/">Lattice Labs</a> (Lattice AGI Chat 4).
       </div>
     </div>
   )

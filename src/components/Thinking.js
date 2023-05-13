@@ -1,5 +1,5 @@
 import React from 'react'
-import bot from '../assets/logo2.png'
+import bot from '../assets/logo2old.png'
 
 const Thinking = () => {
   return (
